@@ -8,7 +8,7 @@
     "clean": "rm -rf .turbo node_modules"
   },
   "dependencies": {
-    "@kontxio/db": "*",
+    "@acme/db": "*",
     "@trpc/client": "10.0.0-proxy-beta.13",
     "@trpc/server": "10.0.0-proxy-beta.13",
     "superjson": "^1.9.1",
