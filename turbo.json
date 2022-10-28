@@ -1,0 +1,39 @@
+{
+  "pipeline": {
+    "build": {
+      "dependsOn": [
+        "^build",
+        "^db:dev"
+      ],
+      "outputs": [
+        ".next/**",
+        ".expo/**"
+      ]
+    },
+    "lint": {
+      "outputs": []
+    },
+    "dev": {
+      "dependsOn": [
+        "^db:dev"
+      ],
+      "cache": false
+    },
+    "db:dev": {
+      "cache": false
+    },
+    "db:studio": {
+      "cache": false
+    },
+    "db:reset": {
+      "cache": false
+    },
+    "clean": {
+      "cache": false
+    },
+    "post-install": {},
+    "//#clean": {
+      "cache": false
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "create-trubo-prisma-next-auth-expo",
+  "private": true,
+  "packageManager": "pnpm@7.13.0",
+  "scripts": {
+    "db:dev": "turbo db:dev",
+    "db:studio": "turbo db:studio",
+    "db:reset": "turbo db:reset",
+    "build": "turbo build",
+    "dev": "turbo dev --parallel",
+    "dev:web": "turbo dev --parallel --filter=@app/web",
+    "dev:mobile": "turbo dev --parallel --filter=@app/mobile",
+    "clean:workspaces": "turbo clean",
+    "clean": "rm -rf node_modules .turbo .vercel",
+    "lint": "turbo lint && manypkg check",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "postinstall": "turbo run post-install"
+  },
+  "dependencies": {
+    "@manypkg/cli": "^0.19.2",
+    "prettier": "^2.7.1",
+    "turbo": "^1.5.5"
+  }
+}
