@@ -1,0 +1,33 @@
+{
+  "name": "@acme/db",
+  "version": "0.1.0",
+  "main": "./index.ts",
+  "types": "./index.ts",
+  "license": "MIT",
+  "scripts": {
+    "post-install": "pnpm db-generate-schemas",
+    "dev": "pnpm db-setup",
+    "build": "pnpm db-migrate-prod",
+    "db:dev": "pnpm db-setup",
+    "db:studio": "pnpm db-studio",
+    "db:reset": "pnpm db-reset",
+    "db-generate-schemas": "prisma generate && prisma format",
+    "db-setup": "run-s db-up db-push",
+    "db-up": "docker-compose up -d",
+    "db-migrate-dev": "pnpm prisma migrate dev",
+    "db-push": "prisma db push",
+    "db-migrate-prod": "pnpm prisma migrate deploy",
+    "db-studio": "pnpm prisma studio",
+    "clean": "rm -rf .turbo node_modules",
+    "db-nuke": "docker-compose down --volumes --remove-orphans",
+    "db-reset": "run-s db-nuke db-setup"
+  },
+  "dependencies": {
+    "@prisma/client": "^4.4.0"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "prisma": "^4.4.0",
+    "typescript": "^4.8.3"
+  }
+}
