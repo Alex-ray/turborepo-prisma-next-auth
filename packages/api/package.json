@@ -1,5 +1,5 @@
 {
-  "name": "@kontxio/api",
+  "name": "@acme/api",
   "version": "0.1.0",
   "main": "./src/index.ts",
   "types": "./src/index.ts",
