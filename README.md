@@ -1,4 +1,3 @@
-
 ## About
 
 A [Turborepo](https://turborepo.org/) monorepo application that contains:
@@ -39,7 +38,8 @@ pnpm i
 
 # Create `.env` file and symlink it to relevant directories
 cp .env.example .env
-ln -s .env ./packages/db/.env
+cd ./packages/db
+ln -s ../../.env .env
 ```
 
 ### Development
@@ -51,10 +51,13 @@ pnpm dev
 ```
 
 Alternatively you can run just the web or mobile apps locally by running
+
 ```
 pnpm dev:web
 ```
+
 or
+
 ```
 pnpm dev:mobile
 ```
@@ -163,4 +166,5 @@ Deploying your Expo application works slightly differently compared to Next.js o
 8. Done! Now that you have created your production build, submitted it to the stores, and installed EAS Update, you are ready for anything!
 
 ## References
+
 The stack originates from [create-t3-app](https://github.com/t3-oss/create-t3-app).

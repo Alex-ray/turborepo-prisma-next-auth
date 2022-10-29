@@ -1,7 +1,7 @@
 // src/server/router/context.ts
 import * as trpc from "@trpc/server";
 import * as trpcNext from "@trpc/server/adapters/next";
-import { prisma } from "@kontxio/db";
+import { prisma } from "@acme/db";
 
 /**
  * Replace this with an object if you want to pass things to createContextInner

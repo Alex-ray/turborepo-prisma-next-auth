@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "Andada Pro";
+  src: url("/fonts/Andada_Pro/AndadaPro-VariableFont_wght.ttf")
+    format("truetype");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Andada Pro";
+  src: url("/fonts/Andada_Pro/AndadaPro-italic-VariableFont_wght.ttf")
+    format("truetype");
+  font-style: italic;
+  font-display: swap;
+}
