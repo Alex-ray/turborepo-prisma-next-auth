@@ -15,7 +15,7 @@ export default function Web() {
   return (
     <>
       <Head>
-        <title>Kontx.io - Your personal project management tool</title>
+        <title>Acme - Your personal project management tool</title>
         <meta
           name="description"
           content="Your personal project management tool."

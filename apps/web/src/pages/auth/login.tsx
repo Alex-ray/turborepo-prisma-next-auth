@@ -93,7 +93,7 @@ JSX.Element => {
   return (
     <>
       <Head>
-        <title>Sign In - Kontx.io</title>
+        <title>Sign In - Acme</title>
       </Head>
       <AuthLayout>
         <div className="flex flex-col">

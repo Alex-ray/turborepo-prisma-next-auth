@@ -1,4 +1,4 @@
-# this file is a helper to run Kontx.io locally
+# this file is a helper to run Acme locally
 # starts a mysql instance on port 5450 to use as a local db
 version: "3.6"
 services:
@@ -13,7 +13,7 @@ services:
       MYSQL_DATABASE: acme
       MYSQL_ALLOW_EMPTY_PASSWORD: 1
     healthcheck:
-      test: ["CMD", "mysqladmin" ,"ping", "-h", "localhost", "-uroot", "-ppass"]
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-uroot", "-ppass"]
       interval: 5s
       timeout: 5s
       retries: 20

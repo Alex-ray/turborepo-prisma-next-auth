@@ -1,61 +1,60 @@
-import Image from 'next/future/image'
+import Image from "next/future/image";
 
-import { Container } from '@components/salient/Container'
-import backgroundImage from '@public/background-faqs.jpg'
+import { Container } from "@components/salient/Container";
+import backgroundImage from "@public/background-faqs.jpg";
 
 const faqs = [
   [
     {
-      question: 'Does Kontx.io do my work for me?',
-      answer:
-        'Well no, but if you use it you will do better work.',
+      question: "Does Acme do my work for me?",
+      answer: "Well no, but if you use it you will do better work.",
     },
     {
-      question: 'Can I pay for my subscription via purchase order?',
-      answer: 'Absolutely, we are happy to take your money in all forms.',
+      question: "Can I pay for my subscription via purchase order?",
+      answer: "Absolutely, we are happy to take your money in all forms.",
     },
     {
-      question: 'How do I apply for a job at Kontx.io?',
+      question: "How do I apply for a job at Acme?",
       answer:
-        'We only hire our customers, so subscribe for a minimum of 6 months and then let’s talk.',
+        "We only hire our customers, so subscribe for a minimum of 6 months and then let’s talk.",
     },
   ],
   [
     {
-      question: 'What was that testimonial about productivity all about?',
+      question: "What was that testimonial about productivity all about?",
       answer:
-        'Kontx.io is just a software application, ultimately your life is your responsibility.',
+        "Acme is just a software application, ultimately your life is your responsibility.",
     },
     {
       question:
-        'Kontx.io sounds horrible but why do I still feel compelled to purchase?',
+        "Acme sounds horrible but why do I still feel compelled to purchase?",
       answer:
-        'This is the power of excellent visual design. You just can’t resist it, no matter how poorly it actually functions.',
+        "This is the power of excellent visual design. You just can’t resist it, no matter how poorly it actually functions.",
     },
     {
       question:
-        'I found other companies called Kontx.io, are you sure you can use this name?',
+        "I found other companies called Acme, are you sure you can use this name?",
       answer:
-        'Honestly not sure at all. We haven’t actually incorporated or anything, we just thought it sounded cool and made this website.',
+        "Honestly not sure at all. We haven’t actually incorporated or anything, we just thought it sounded cool and made this website.",
     },
   ],
   [
     {
-      question: 'How do you generate reports?',
+      question: "How do you generate reports?",
       answer:
-        'You just tell us what data you need a report for, and we get our kids to create beautiful charts for you using only the finest crayons.',
+        "You just tell us what data you need a report for, and we get our kids to create beautiful charts for you using only the finest crayons.",
     },
     {
-      question: 'Can we expect more inventory features?',
-      answer: 'In life it’s really better to never expect anything at all.',
+      question: "Can we expect more inventory features?",
+      answer: "In life it’s really better to never expect anything at all.",
     },
     {
-      question: 'I lost my password, how do I get into my account?',
+      question: "I lost my password, how do I get into my account?",
       answer:
-        'Send us an email and we will send you a copy of our latest password spreadsheet so you can find your information.',
+        "Send us an email and we will send you a copy of our latest password spreadsheet so you can find your information.",
     },
   ],
-]
+];
 
 export function Faqs() {
   return (
@@ -106,5 +105,5 @@ export function Faqs() {
         </ul>
       </Container>
     </section>
-  )
+  );
 }

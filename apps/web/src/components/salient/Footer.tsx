@@ -1,8 +1,8 @@
-import Link from 'next/link'
+import Link from "next/link";
 
-import { Container } from '@components/salient/Container'
-import { LogoFull } from '@components/salient/LogoFull'
-import { NavLink } from '@components/salient/NavLink'
+import { Container } from "@components/salient/Container";
+import { LogoFull } from "@components/salient/LogoFull";
+import { NavLink } from "@components/salient/NavLink";
 
 export function Footer() {
   return (
@@ -23,7 +23,7 @@ export function Footer() {
             <Link
               href="https://twitter.com"
               className="group"
-              aria-label="Kontx.io on Twitter"
+              aria-label="Acme on Twitter"
             >
               <svg
                 aria-hidden="true"
@@ -35,7 +35,7 @@ export function Footer() {
             <Link
               href="https://github.com"
               className="group"
-              aria-label="Kontx.io on GitHub"
+              aria-label="Acme on GitHub"
             >
               <svg
                 aria-hidden="true"
@@ -46,11 +46,11 @@ export function Footer() {
             </Link>
           </div>
           <p className="mt-6 text-sm text-slate-500 sm:mt-0">
-            Copyright &copy; {new Date().getFullYear()} Kontx.io. All rights
+            Copyright &copy; {new Date().getFullYear()} Acme. All rights
             reserved.
           </p>
         </div>
       </Container>
     </footer>
-  )
+  );
 }

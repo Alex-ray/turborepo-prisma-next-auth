@@ -67,9 +67,9 @@ const sendVerificationRequest = ({
   const emailTemplate = Handlebars.compile(emailFile);
 
   transporter.sendMail({
-    from: `"Kontx.io" ${process.env.EMAIL_FROM}`,
+    from: `"Acme" ${process.env.EMAIL_FROM}`,
     to: identifier,
-    subject: "Your sign-in link for Kontx.io",
+    subject: "Your sign-in link for Acme",
     html: emailTemplate({
       base_url: process.env.NEXTAUTH_URL,
       signin_url: url,

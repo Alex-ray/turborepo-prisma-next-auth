@@ -84,7 +84,7 @@ function MobileSidebar(props: MobileSidebar) {
               <div className="h-0 flex-1 overflow-y-auto pt-5 pb-4">
                 <div className="flex flex-shrink-0 items-center px-4">
                   <h1 className="text-xl font-bold text-gray-700 hover:text-gray-900">
-                    <Link href="/app">Kontx.io</Link>
+                    <Link href="/app">Acme</Link>
                   </h1>
                 </div>
                 <nav aria-label="Sidebar" className="mt-5">
