@@ -26,6 +26,10 @@ packages
      └─ typesafe db-calls using Prisma
 ```
 
+## Showcase
+
+![showcase](https://p327.p0.n0.cdn.getcloudapp.com/items/12uzYe2E/56edf52f-bfe5-499f-a607-f0b2163153d2.gif?v=5a4fe7a8aa2a2d1facc1f687801a1389)
+
 ## Quick Start
 
 To get it running, follow the steps below:
