@@ -1,6 +1,6 @@
-import Image from 'next/future/image'
+import Image from "next/future/image";
 
-import backgroundImage from '@public/background-auth.jpg'
+import backgroundImage from "@public/background-auth.jpg";
 
 type Props = {
   children?: React.ReactNode;
