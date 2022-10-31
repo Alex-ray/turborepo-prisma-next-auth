@@ -28,7 +28,8 @@ packages
 
 ## Showcase
 
-![showcase](https://p327.p0.n0.cdn.getcloudapp.com/items/12uzYe2E/56edf52f-bfe5-499f-a607-f0b2163153d2.gif?v=5a4fe7a8aa2a2d1facc1f687801a1389)
+https://user-images.githubusercontent.com/2454928/199092461-f79ce79b-a759-4aed-a472-26117527af51.mp4
+
 
 ## Quick Start
 
@@ -75,6 +76,7 @@ In order to use it you have to set up a email transporter service. This starter 
 To get sendinblue setup go to [sendinblue.com](https://www.sendinblue.com/) and signup for a free account.
 
 Go to the SMTP & API page in the profile dropdown in the top right, click on the SMTP tab and click on "Create a new SMTP key"
+
 ![sendinblue SMTP & API settings page](https://p327.p0.n0.cdn.getcloudapp.com/items/Z4uDRdk8/9c634247-f1e5-4208-8fb8-2f51e718fd9d.jpg?v=28dd0fc91571e5bf6ce1a600bf0d1392)
 
 Add the login and master password to these ENV variables in your `.env` file.
