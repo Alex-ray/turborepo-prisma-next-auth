@@ -51,8 +51,8 @@ export function LogoFull(props: LogoFull) {
           y2="-30.2842"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#26CBFF" />
-          <stop offset="1" stop-color="#2711FF" />
+          <stop stopColor="#26CBFF" />
+          <stop offset="1" stopColor="#2711FF" />
         </linearGradient>
       </defs>
     </svg>

@@ -62,6 +62,28 @@ or
 pnpm dev:mobile
 ```
 
+### Configuring Next Auth Email Provider
+
+The [Next Auth email provider](https://next-auth.js.org/providers/email) is used for password less email authentication.
+
+In order to use it you have to set up a email transporter service. This starter kit uses [sendinblue.com](https://www.sendinblue.com/) but you can use any email delivery service provider supported by [nodemailer](https://nodemailer.com/smtp/).
+
+To get sendinblue setup go to [sendinblue.com](https://www.sendinblue.com/) and signup for a free account.
+
+Go to the SMTP & API page in the profile dropdown in the top right, click on the SMTP tab and click on "Create a new SMTP key"
+![sendinblue SMTP & API settings page](https://p327.p0.n0.cdn.getcloudapp.com/items/Z4uDRdk8/9c634247-f1e5-4208-8fb8-2f51e718fd9d.jpg?v=28dd0fc91571e5bf6ce1a600bf0d1392)
+
+Add the login and master password to these ENV variables in your `.env` file.
+
+```
+EMAIL_SERVER_USER="example@acme.com"
+EMAIL_SERVER_PASSWORD="master password"
+
+EMAIL_FROM="example@acme.com"
+```
+
+Thats it, you should now be able to authenticate users using a password less email.
+
 ### Configure Expo `dev`-script
 
 > **Note:** If you want to use a physical phone with Expo Go, just run `pnpm dev` and scan the QR-code.
