@@ -84,6 +84,7 @@ export const AuthOptions: NextAuthOptions = {
     signIn: "/auth/register",
     error: "/auth/register",
     newUser: "/app",
+    verifyRequest: "/auth/verify-request",
   },
   providers: [
     EmailProvider({

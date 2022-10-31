@@ -65,9 +65,8 @@ async function getServerSideProps(context: GetServerSidePropsContext) {
   };
 }
 
-const Login = (
-  props: inferSSRProps<typeof getServerSideProps>
-): JSX.Element => {
+const Login = (): // props: inferSSRProps<typeof getServerSideProps>
+JSX.Element => {
   const {
     register,
     handleSubmit,
@@ -99,7 +98,9 @@ const Login = (
       <AuthLayout>
         <div className="flex flex-col">
           <Link href="/" aria-label="Home">
-            <LogoFull className="h-10 w-auto" />
+            <div>
+              <LogoFull className="h-10 w-auto" />
+            </div>
           </Link>
           <div className="mt-20">
             <h2 className="text-lg font-semibold text-gray-900">

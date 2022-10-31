@@ -1,5 +1,5 @@
 type LogoFull = {
-  [key: string]: any;
+  [key: string]: unknown;
 };
 
 export function LogoFull(props: LogoFull) {
@@ -23,12 +23,12 @@ export function LogoFull(props: LogoFull) {
       <path
         d="M42.75 27C42.75 36.4573 33 44.25 24.0929 44.25C13.2061 44.25 4.38053 37.3334 4.38053 27.8761C4.38053 18.4188 13.2061 10.7522 24.0929 10.7522C34.9798 10.7522 42.75 17.5427 42.75 27Z"
         fill="#919191"
-        style={{ mixBlendMode: 'soft-light' }}
+        style={{ mixBlendMode: "soft-light" }}
       />
       <path
         d="M39.4248 26.0841C39.4248 31.9124 34.7 36.6372 28.8717 36.6372C23.0434 36.6372 18.3186 31.9124 18.3186 26.0841C18.3186 20.2558 23.0434 15.531 28.8717 15.531C34.7 15.531 39.4248 20.2558 39.4248 26.0841Z"
         fill="#8E8E8E"
-        style={{ mixBlendMode: 'soft-light' }}
+        style={{ mixBlendMode: "soft-light" }}
       />
       <defs>
         <linearGradient
